@@ -39,3 +39,7 @@ clean:
 
 install:
 	pip3 install .
+
+build:
+	docker image prune -f
+	docker build -t maigret .
